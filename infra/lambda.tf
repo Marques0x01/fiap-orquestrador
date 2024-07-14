@@ -24,7 +24,7 @@ resource "aws_lambda_event_source_mapping" "sqs_trigger" {
   event_source_arn = "arn:aws:sqs:us-east-2:381492057057:orquestrador_pedido"
   function_name    = aws_lambda_function.lambda.arn
   enabled          = true
-  batch_size       = 10
+  batch_size       = 1
 
   depends_on = [aws_lambda_function.lambda]
 }
