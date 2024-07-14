@@ -28,7 +28,6 @@ class RequestsService:
         return self._handle_response(response)
 
     def _handle_response(self, response: requests.Response) -> dict:
-        print(response.content)
         try:
             response.raise_for_status()
             logger.info(f'Status Code: {response.status_code}, Response: {response.json()}')

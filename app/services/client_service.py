@@ -13,5 +13,4 @@ class ClientService:
     def consultar_cliente_por_cpf(self, cpf: str):
         query_params = {'id': cpf}
         response = self.__requests.get(endpoint=f'{self.__endpoint}/client_id', params=query_params)
-        logger.info(response)
-        return response
+        return response['resp']
