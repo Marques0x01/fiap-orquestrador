@@ -34,6 +34,15 @@ resource "aws_iam_policy" "lambda_policies" {
           "sns:Publish"
         ],
         Resource = "arn:aws:sns:us-east-2:381492057057:notificacao_pagamento"
+      },
+      {
+        Effect = "Allow",
+        Action = [
+          "sqs:ReceiveMessage",
+          "sqs:DeleteMessage",
+          "sqs:GetQueueAttributes"
+        ],
+        Resource = "arn:aws:sqs:us-east-2:381492057057:orquestrador_pedido"
       }
     ]
   })
