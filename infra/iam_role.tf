@@ -43,6 +43,15 @@ resource "aws_iam_policy" "lambda_policies" {
           "sqs:GetQueueAttributes"
         ],
         Resource = "arn:aws:sqs:us-east-2:381492057057:orquestrador_pedido"
+      },
+      {
+        Effect = "Allow",
+        Action = [
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents"
+        ],
+        Resource = "arn:aws:logs:*:*:*"
       }
     ]
   })
