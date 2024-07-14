@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd app
-          pip install -r requirements.txt
+          pip install -r requirements.txt -t ./
 
   Publish:
     needs: Build
@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd app
-          pip install -r requirements.txt
+          pip install -r requirements.txt -t ./
 
       - name: Terraform init
         run: |
