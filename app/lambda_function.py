@@ -1,3 +1,4 @@
+from os import getenv
 import json
 from infra.logger_config import logger
 from infra.requests_service import RequestsService
@@ -6,15 +7,6 @@ from services.order_service import OrderService
 from services.payment_service import PaymentService
 from services.kitchen_service import KitchenService
 
-# provisionamento de recursos globais do lambda
-try:
-    req = RequestsService('https://g5sd3oe22m.execute-api.us-east-2.amazonaws.com/prod/fiap-lanches')
-    client_service = ClientService(req)
-    order_service = OrderService(req)
-    payment_service = PaymentService(req)
-    kitchen_service = KitchenService(req)
-except Exception as ex:
-    raise ex
 
 class SagaException(Exception):
     pass
@@ -45,6 +37,18 @@ class Saga:
                 logger.error(f"Erro na compensação do passo {i + 1}: {e}")
 
 def lambda_handler(event, context):
+    if getenv('is_aws'):
+        req = RequestsService('https://g5sd3oe22m.execute-api.us-east-2.amazonaws.com/prod/fiap-lanches')
+    else:
+        req = RequestsService('http://127.0.0.1:5000')
+    try:
+        client_service = ClientService(req)
+        order_service = OrderService(req)
+        payment_service = PaymentService(req)
+        kitchen_service = KitchenService(req)
+    except Exception as ex:
+        raise ex
+
     id_pedido = None
     id_cliente = None
     mensagens = event['Records']

@@ -26,8 +26,11 @@ variable "region" {
 }
 
 variable "env_vars" {
-  description = "Enviroment variables"
-  type        = object({})
-  default     = {}
+  description = "Environment variables"
+  type = object({
+    is_aws = bool
+  })
+  default = {
+    is_aws = true
+  }
 }
-
