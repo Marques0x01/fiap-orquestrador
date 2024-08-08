@@ -11,6 +11,10 @@ https://youtu.be/UNHsbJfV1ZM
 ### Relatório RIPD
 https://docs.google.com/document/d/1B95qNDZeVxFm43rZ7FqVjK8sg-2wFoqW/edit
 
+### Zap Report
+Primeira execução: ![Primeiro ZAP](ZAP Report Hight.html)
+Segunda execução: ![Segundo ZAP](ZAP Report Fixed.html)
+
 ### Requisitos
 
 - Python 3.7 ou superior
