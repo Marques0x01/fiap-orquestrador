@@ -12,8 +12,8 @@ https://youtu.be/UNHsbJfV1ZM
 https://docs.google.com/document/d/1B95qNDZeVxFm43rZ7FqVjK8sg-2wFoqW/edit
 
 ### Zap Report
-Primeira execução: ![Primeiro ZAP](ZAP Report Hight.html)
-Segunda execução: ![Segundo ZAP](ZAP Report Fixed.html)
+Primeira execução: [Primeiro ZAP](ZAP%20Report%20Hight.html)
+Segunda execução: [Segundo ZAP](ZAP%20Report%20Fixed.html)
 
 ### Requisitos
 
