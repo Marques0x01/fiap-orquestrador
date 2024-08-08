@@ -6,7 +6,7 @@ Este repositório contém uma função Lambda escrita em Python que tem como obj
 https://youtu.be/UNHsbJfV1ZM
 
 ### Arquitetura
-
+![Logo da Aplicação](FIAP-Lanches-API-Page-9.drawio.png)
 
 ### Relatório RIPD
 https://docs.google.com/document/d/1B95qNDZeVxFm43rZ7FqVjK8sg-2wFoqW/edit
