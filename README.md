@@ -15,8 +15,10 @@ https://docs.google.com/document/d/1B95qNDZeVxFm43rZ7FqVjK8sg-2wFoqW/edit
 Para visualizar os relatórios ZAP, baixe ou clone este repositório e abra os arquivos HTML localmente no seu navegador.
 
 - Primeira execução: [Primeiro ZAP](ZAP%20Report%20Hight.html)
+- ![Imagem](ZAP%HIGH.jpeg)
 - Segunda execução: [Segundo ZAP](ZAP%20Report%20Fixed.html)
-
+- ![Imagem](ZAP%LOW.jpeg)
+  
 ### Requisitos
 
 - Python 3.7 ou superior
