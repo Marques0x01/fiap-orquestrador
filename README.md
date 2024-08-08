@@ -2,6 +2,15 @@
 
 Este repositório contém uma função Lambda escrita em Python que tem como objeito orquestrar todo o ciclo de vida do fluxo de pedido, pagamento e finalmente envio do pedido para a cozinha. Abaixo estão as instruções para instalar as dependências necessárias e executar os arquivos `local_api.py` e `local.py` localmente.
 
+### Video Arquitetura
+https://youtu.be/UNHsbJfV1ZM
+
+### Arquitetura
+
+
+### Relatório RIPD
+https://docs.google.com/document/d/1B95qNDZeVxFm43rZ7FqVjK8sg-2wFoqW/edit
+
 ### Requisitos
 
 - Python 3.7 ou superior
